@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gulmarg Embroideries</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <!-- google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,400;0,900;1,900&family=Sacramento&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/c3b657c61d.js" crossorigin="anonymous"></script>
+    <!-- Boot Strap Strips -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+    <!-- Styles / Scripts -->
+    <link href="http://irshad.test/css/styles.css" rel="stylesheet">
+
+            <script type="module" src="http://[::1]:5173/@vite/client"></script><link rel="stylesheet" href="http://[::1]:5173/resources/css/app.css" /><script type="module" src="http://[::1]:5173/resources/js/app.js"></script>    </head>
+
+<body class="text-center bg-myprimary bg-opacity-5 font-montserrat antialiased">
+
+
+    <!-- Nav Bar -->
+    <nav x-data="{ open: false }"
+    class="fixed w-full z-10 backdrop-blur-lg border-b border-transparent bg-myprimary bg-opacity-70">
+    <!-- Primary Navigation Menu -->
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-14 max-sm:h-8">
+            <div class="flex">
+                <!-- Logo -->
+                <div class="shrink-0 flex items-center">
+                    <a href="http://irshad.test">
+                        <a class="text-lg text-gray-100 font-extrabold" href="">Gulmarg Embriodries</a>
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ms-24 sm:flex">
+                    <a class="inline-flex items-center px-1 border-b-2 border-white dark:border-gray-200 text-extrabold font-medium leading-5 text-gray-50 dark:text-gray-100 focus:outline-none focus:border-myprimary transition duration-150 ease-in-out" href="http://irshad.test">
+    Home
+</a>
+                    <a class="inline-flex items-center px-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-100 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-100 hover:border-gray-300 dark:hover:border-gray-300 focus:outline-none focus:text-gray-100 dark:focus:text-gray-100 focus:border-gray-300 dark:focus:border-gray-700 transition duration-150 ease-in-out" href="http://irshad.test/men">
+    Men
+</a>
+                    <a class="inline-flex items-center px-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-100 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-100 hover:border-gray-300 dark:hover:border-gray-300 focus:outline-none focus:text-gray-100 dark:focus:text-gray-100 focus:border-gray-300 dark:focus:border-gray-700 transition duration-150 ease-in-out" href="http://irshad.test/women">
+    Women
+</a>
+                    <a class="inline-flex items-center px-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-100 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-100 hover:border-gray-300 dark:hover:border-gray-300 focus:outline-none focus:text-gray-100 dark:focus:text-gray-100 focus:border-gray-300 dark:focus:border-gray-700 transition duration-150 ease-in-out" href="http://irshad.test/contact">
+    Contact Us
+</a>
+                </div>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="-me-2 flex items-center sm:hidden">
+                <button @click="open = ! open"
+                    class="inline-flex items-center justify-center p-1 rounded-md text-pink-50 dark:text-pink-100 hover:text-pink-500 dark:hover:text-pink-400 hover:bg-pink-100 dark:hover:bg-pink-900 focus:outline-none focus:bg-pink-200 dark:focus:bg-pink-800 focus:text-pink-100 dark:focus:text-pink-200 transition duration-150 ease-in-out">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                        <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive Navigation Menu -->
+    <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
+        <div class="pt-0 pb-2 ">
+            <a class="inline-flex items-center text-sm px-1 pt-1 border-b-2 border-white dark:border-gray-200 text-extrabold font-medium leading-5 text-gray-50 dark:text-gray-100 focus:outline-none focus:border-myprimary transition duration-150 ease-in-out" href="http://irshad.test">
+    Home
+</a>
+            <a class="inline-flex items-center text-sm px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-100 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-100 hover:border-gray-300 dark:hover:border-gray-300 focus:outline-none focus:text-gray-100 dark:focus:text-gray-100 focus:border-gray-300 dark:focus:border-gray-700 transition duration-150 ease-in-out" href="http://irshad.test/men">
+    Men
+</a>
+            <a class="inline-flex items-center text-sm px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-100 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-100 hover:border-gray-300 dark:hover:border-gray-300 focus:outline-none focus:text-gray-100 dark:focus:text-gray-100 focus:border-gray-300 dark:focus:border-gray-700 transition duration-150 ease-in-out" href="http://irshad.test/women">
+    Women
+</a>
+            <a class="inline-flex items-center text-sm px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-100 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-100 hover:border-gray-300 dark:hover:border-gray-300 focus:outline-none focus:text-gray-100 dark:focus:text-gray-100 focus:border-gray-300 dark:focus:border-gray-700 transition duration-150 ease-in-out" href="http://irshad.test/contact">
+    Contact Us
+</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Intro Section -->
+    <div
+        class="flex flex-col sm:flex-row justify-between items-center bg-myprimary text-gray-100 max-sm:p-8 lg:pl-12 pt-16 pr-4">
+        <div class="sm:w-1/2 lg:w-3/5 relative">
+            <div class="w-3/4 h-auto mx-auto">
+                <img id="intro-img"
+                    class="transform translate-y-20 opacity-0 transition duration-700 ease-out delay-3000 rounded-full py-1"
+                    src="images/red-sh.jpg" alt="Intro Image">
+            </div>
+        </div>
+        <div class="sm:w-1/2 lg:w-2/5 mb-6 sm:mb-0">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-montserrat leading-tight">
+                <blockquote id="typing-text"></blockquote>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <section id="features" class="py-12 bg-slate-200 text-opacity-70 text-gray-900">
+        <div
+            class="mx-auto flex flex-col sm:flex-row justify-evenly items-center space-y-6 sm:space-y-0 sm:space-x-6 overflow-hidden">
+            <div class="feature-box text-center sm:text-left p-4 transform transition duration-500 hover:scale-105">
+                <i
+                    class="icon fa-sharp fa-solid fa-circle-check fa-4x mb-4 text-green-500 hover:scale-105 duration-300"></i>
+                <h3 class="feature-title text-xl font-semibold mb-2">Effortless Ordering</h3>
+                <p class="text-gray-700">Experience a seamless ordering process with our user-friendly site. A quick
+                    call connects you directly to our dedicated team.</p>
+            </div>
+
+            <div class="feature-box text-center sm:text-left p-4 transform transition duration-500 hover:scale-105">
+                <i class="icon fa-solid fa-bullseye fa-4x mb-4 text-blue-500 hover:scale-105 duration-300"></i>
+                <h3 class="feature-title text-xl font-semibold mb-2">Trusted by Thousands</h3>
+                <p class="text-gray-700">Join over ten thousand satisfied clients who trust us for our vast collection
+                    of high-quality shawls, tailored to meet every need.</p>
+            </div>
+
+            <div class="feature-box text-center sm:text-left p-4 transform transition duration-500 hover:scale-105">
+                <i class="icon fa-solid fa-heart fa-4x mb-4 text-red-500 hover:scale-105 duration-300"></i>
+                <h3 class="feature-title text-xl font-semibold mb-2">Authentic Pashmina Shawls</h3>
+                <p class="text-gray-700">Indulge in the elegance of our genuine Pashmina shawls, perfect for gifting or
+                    a cherished addition to your wardrobe.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <blockquote
+        class="text-4xl max-sm:text-xl font-bold underline-offset-2 text-center italic border-l-4 border-myprimary mb-4 mt-4 pb-2 pl-4 ml-1 text-myprimary opacity-80 bg-slate-200 shadow-lg">
+        “ Timeless Elegant and Exquisite Pashmina Shawls ”</blockquote>
+    <p class="text-gray-500 font-medium px-2 py-3 mx-5">Our collection of Pashmina shawls showcases the perfect blend of
+        luxury and tradition. Each shawl is crafted from the Himalayan fibers and adorned with intricate
+        hand-embroidered needlework. Experience the timeless beauty and unmatched sophistication that these exquisite
+        pieces bring to your wardrobe.</p>
+
+    <!-- Card -->
+    <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4">
+    <div class="max-w-xs lg:max-w-md rounded overflow-hidden shadow-lg">
+        <img class="w-full h-52 lg:h-80 object-cover transform transition duration-200 hover:scale-95"
+            src="images/basic-shawl.jpg" alt="Product Image">
+        <div class="px-6 py-1 bg-white">
+            <div class="font-extrabold text-lg mb-1 mt-1 text-gray-800 transition duration-300 hover:text-primary">
+                Basic
+            </div>
+            <p class="text-gray-500 text-sm mb-2 hidden lg:block">
+                This is a short description of the product. It highlights the key features and benefits.
+            </p>
+            <p class="text-pink-600 text-lg max-sm:text-sm mb-2 font-semibold">₹99 - ₹999</p>
+            <button
+    type="submit" class="inline-flex items-center px-3 py-2 bg-gray-700 dark:bg-myprimary border border-transparent rounded-md font-semibold text-xs text-gray-200 dark:text-gray-100 uppercase tracking-widest hover:bg-myprimary hover:text-white dark:hover:bg-myprimary focus:bg-gray-700 dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150 hover:scale-105 max-sm:font-light mb-1">
+    Buy Now
+</button>
+        </div>
+    </div>
+    <div class="max-w-xs lg:max-w-md rounded overflow-hidden shadow-lg">
+        <img class="w-full h-52 lg:h-80 object-cover transform transition duration-200 hover:scale-95"
+            src="images/ladies.JPG" alt="Product Image">
+        <div class="px-6 py-1 bg-white">
+            <div class="font-extrabold text-lg mb-1 mt-1 text-gray-800 transition duration-300 hover:text-primary">
+                Women
+            </div>
+            <p class="text-gray-500 text-sm mb-2 hidden lg:block">
+                Finest quality Pashmina shawls with intricate hand-embroidered needlework, reflecting the skilled
+                craftsmanship and timeless beauty. </p>
+            <p class="text-pink-600 text-lg max-sm:text-sm mb-2 font-semibold">₹999 - ₹9999</p>
+            <button
+    type="submit" class="inline-flex items-center px-3 py-2 bg-gray-700 dark:bg-myprimary border border-transparent rounded-md font-semibold text-xs text-gray-200 dark:text-gray-100 uppercase tracking-widest hover:bg-myprimary hover:text-white dark:hover:bg-myprimary focus:bg-gray-700 dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150 hover:scale-105 max-sm:font-light mb-1 max-sm:text-xs">
+    Buy Now
+</button>
+        </div>
+    </div>
+    <div class="max-w-xs lg:max-w-md rounded overflow-hidden shadow-lg">
+        <img class="w-full h-52 lg:h-80 object-cover transform transition duration-200 hover:scale-95"
+            src="images/basic-shawl.jpg" alt="Product Image">
+        <div class="px-6 py-1 bg-white">
+            <div class="font-extrabold text-lg mb-1 mt-1 text-gray-800 transition duration-300 hover:text-primary">
+                Men
+            </div>
+            <p class="text-gray-500 text-sm mb-2 hidden lg:block">
+                Finest quality Pashmina shawls with intricate hand-embroidered needlework, reflecting the skilled
+                craftsmanship and timeless beauty. </p>
+            <p class="text-pink-600 text-lg max-sm:text-sm mb-2 font-semibold">₹999 - ₹9999</p>
+            <button
+    type="submit" class="inline-flex items-center px-3 py-2 bg-gray-700 dark:bg-myprimary border border-transparent rounded-md font-semibold text-xs text-gray-200 dark:text-gray-100 uppercase tracking-widest hover:bg-myprimary hover:text-white dark:hover:bg-myprimary focus:bg-gray-700 dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150 hover:scale-105 max-sm:font-light mb-1 max-sm:text-xs">
+    Buy Now
+</button>
+        </div>
+    </div>
+    <div class="max-w-xs lg:max-w-md rounded overflow-hidden shadow-lg">
+        <img class="w-full h-52 lg:h-80 object-cover transform transition duration-200 hover:scale-95"
+            src="images/must.jpg" alt="Product Image">
+        <div class="px-6 py-1 bg-white">
+            <div class="font-extrabold text-lg mb-1 mt-1 text-gray-800 transition duration-300 hover:text-primary">
+                Men
+            </div>
+            <p class="text-gray-500 text-sm mb-2 hidden lg:block">
+                Finest quality Pashmina shawls with intricate hand-embroidered needlework, reflecting the skilled
+                craftsmanship and timeless beauty. </p>
+            <p class="text-pink-600 text-lg max-sm:text-sm mb-2 font-semibold">₹999 - ₹9999</p>
+            <button
+    type="submit" class="inline-flex items-center px-3 py-2 bg-gray-700 dark:bg-myprimary border border-transparent rounded-md font-semibold text-xs text-gray-200 dark:text-gray-100 uppercase tracking-widest hover:bg-myprimary hover:text-white dark:hover:bg-myprimary focus:bg-gray-700 dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150 hover:scale-105 max-sm:font-light mb-1 max-sm:text-xs">
+    Buy Now
+</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <div class="wrapper">
+            <blockquote
+                class="text-2xl max-sm:text-xl font-bold underline-offset-2 text-center italic border-l-4 border-myprimary mb-4 mt-4 pb-2 pl-4 ml-1 text-myprimary bg-slate-200 opacity-80 shadow-lg">
+                “ Wrap Your Loved Ones in Luxury, Explore the Finest Shawls Here... ”</blockquote>
+        </div>
+    </section>
+
+    <!-- Slider -->
+    <section id="testimonials">
+        <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <!-- Image Slider Section -->
+                    <div
+                        class="flex justify-evenly items-center bg-myprimary bg-opacity-50 p-6 sm:p-8 lg:p-12 max-sm:flex-col">
+                        <img class="rounded-xl shadow-lg transform transition duration-500 hover:scale-105 h-60 sm:ms-24 max-sm:h-28"
+                            src="images/shawl2-white.png" alt="shawl-profile">
+                        <blockquote
+                            class="text-xl text-center font-serif italic mb-2 mt-4 mx-20 text-gray-200 max-sm:mx-2 max-sm:text-sm">
+                            “ You no longer have to search other sites for love. You will find the best shawls stuff
+                            here.”</blockquote>
+                    </div>
+                </div>
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <!-- Image Slider Section -->
+                    <div
+                        class="flex justify-evenly items-center bg-myprimary p-6 sm:p-8 lg:p-12 bg-opacity-50 max-sm:flex-col">
+                        <img class="rounded-xl shadow-lg transform transition duration-500 hover:scale-105 h-60 sm:ms-24 max-sm:h-28"
+                            src="images/shawl2-white.png" alt="shawl-profile">
+                        <blockquote
+                            class="text-xl text-center font-serif italic mb-2 mt-4 mx-20 text-gray-200 max-sm:mx-2 max-sm:text-sm">
+                            “ You no longer have to search other sites for love. You will find the best shawls stuff
+                            here.”</blockquote>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Press -->
+    <section id="press" class="flex justify-evenly items-center h-auto p-4 flex-wrap">
+        <img class="w-40 p-2 max-sm:w-20" src="images/techcrunch.png" alt="tc-logo">
+        <img class="w-40 p-2 max-sm:w-20" src="images/tnw.png" alt="tnw-logo">
+        <img class="w-40 p-2 max-sm:w-20" src="images/bizinsider.png" alt="biz-insider-logo">
+        <img class="w-40 p-2 max-sm:w-20" src="images/mashable.png" alt="mashable-logo">
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="bg-myprimary bg-opacity-10">
+        <div class="flex justify-center items-center p-6 sm:p-8 lg:p-6">
+            <a class="px-4 text-gray-600 " href="irshadwanis71@gmail.com"><i
+                    class="social-icon4 fa-solid fa-envelope fa-2x"></i>
+            </a>
+            <a class="px-4 text-blue-600 "
+                href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D1007767%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA3pugBhAwEiwAWFzwden08jtXt7RLr_CyEFCnAu1-gXBdU-I4JGDs5jYO6vzUSljVfdgopxoC1q8QAvD_BwE">
+                <i class="social-icon fa-brands fa-facebook fa-2x "></i>
+            </a>
+            <a class="px-4 text-pink-700 " href="https://www.instagram.com/p/CeBh1sZvwuH/?utm_source=ig_web_copy_link">
+                <i class="social-icon2 fa-brands fa-instagram fa-2x"></i>
+            </a>
+        </div>
+        <div class="text-gray-900 text-sm pb-2">Gulmarg Embroideries | <i class="fa fa-phone"></i> +91 9797216555 <br>
+            © All rights reserved
+        </div>
+    </footer>
+
+    <!-- Scroll -->
+    <button id="scroll-to-top"
+    class="fixed bottom-5 right-5 p-2 bg-myprimary bg-opacity-50 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition-opacity duration-300 ease-out opacity-0">↑</button>
+    <script src="http://irshad.test/js/custom.js"></script>
+</body>
+
+</html>
